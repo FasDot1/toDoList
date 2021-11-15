@@ -24,5 +24,27 @@
         </div>
     </header>
     
+    <div class="container mt-3">
+        <h2>Add Items</h2>
+
+        <label id="iblsuccess" class="text-success" style="display: none;"></label>
+
+        <form id="addForm">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                    <input type="text" onkeyup="toogleButton(this, 'submit')" class="from-control" id="item">
+                </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5">
+                        <input type="submit" class="btn btn-dark" id="submit" value="Submit" disabled>
+                    </div>
+            </div>
+        </form>
+        
+        <h3 class="mt-4">Task</h3>
+
+        <form id="addForm">
+            <ul class="list-group" id="items"></ul>
+        </form>
+    </div>
 </body>
 </html>
